@@ -43,4 +43,20 @@ function setAlarm() {
   }, 1000);
 }
 
+// Function to play alarm sound
+function playAlarmSound() {
+    const alarmSound = new Audio('./assets/audio/alarmsound.mp3');
+    alarmSound.play();
+}
+
+function updateClock() {
+  let now = new Date();
+  let hours = now.getHours().toString().padStart(2, '0');
+  let minutes = now.getMinutes().toString().padStart(2, '0');
+  document.getElementById('time').innerText = hours + ':' + minutes;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
 
