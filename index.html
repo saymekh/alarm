@@ -18,6 +18,16 @@
         <audio id="alarmSound" src="./assets/audio/alarmsound.mp3" preload="auto"></audio>
     </head>
     <body>
-      
+      <div class="clock">
+          <div id="time" class="time"></div>
+          <div class="alarm-indicator" id="alarmIndicator"></div>
+          <div class="alarm">
+            <div id="alarmTime" class="alarm-time"></div>
+            <input type="number" id="hourInput" placeholder="HH">
+            <input type="number" id="minuteInput" placeholder="MM">
+            <button onclick="setAlarm()">Set Alarm</button>
+            <div id="alarmIndicator" class="alarm-indicator"></div>
+        </div>
+      </div>
   </body>
 </html>
