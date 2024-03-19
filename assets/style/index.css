@@ -56,3 +56,7 @@ button {
   border-radius: 50%;
   display: none;
 }
+
+.alarm-time {
+  margin-bottom: 10px;
+}
